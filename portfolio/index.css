@@ -1,0 +1,379 @@
+* {
+    scroll-behavior:smooth;
+}
+:root {
+    --main--color: cyan;
+}
+
+body {
+    background-color: rgb(15, 14, 14);
+}
+.navBar{
+    background-color: rgb(15, 14, 14);
+    position:sticky;
+    top:0px;
+} 
+.logo {
+    color: white;
+    font-size: large;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.links a:hover {
+    color: var(--main--color);
+}
+
+@media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 1200px !important;
+    }
+}
+
+.meTxt {
+    color: white;
+    margin-top: 100px !important;
+}
+
+.fs {
+    font-size: 40px;
+}
+
+.skill {
+    font-size: 26px;
+    color: var(--main--color);
+}
+
+.icon i {
+    border: 2px solid cyan;
+    padding: 10px;
+    border-radius: 50%;
+    color: cyan;
+    transition: all 0.5s;
+    box-shadow: 0 0 0.3em var(--main--color);
+}
+
+.icon i:hover {
+    cursor: pointer;
+    background-color: var(--main--color);
+    color: black;
+}
+
+.home {
+    min-height: 10vh;
+    padding-top: 10rem;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.cvbtn {
+    background-color: var(--main--color);
+    color: rgb(65, 57, 57);
+    font-weight: 600;
+    width: 25%;
+    border-radius: 10vh;
+    border: none;
+}
+
+.cvbtn:hover {
+    transition: all 0.4s;
+    box-shadow: 0 0 0.3em var(--main--color);
+}
+
+.img {
+    align-self: center;
+    border-radius: 8%;
+    width: 20vw;
+    animation: imageDown 4s ease-in-out infinite;
+
+}
+@keyframes imageDown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#about {
+    color: white;
+
+}
+
+.about-sec {
+    margin-top: 10vw;
+}
+
+.about h1 {
+    color: white;
+}
+
+.about span {
+    color: var(--main--color);
+}
+
+.about h3 {
+    color: white;
+}
+
+.about p {
+    color: white;
+}
+
+.readmorebtn {
+    background-color: var(--main--color);
+    width: 40%;
+    color: rgb(65, 57, 57);
+    font-weight: 600;
+    border-radius: 10vh;
+    border: none;
+}
+
+.readmorebtn:hover {
+    transition: all 0.4s;
+    box-shadow: 0 0 0.3em var(--main--color);
+}
+
+/* services section */
+
+.headOur {
+    margin-top: 10vw !important;
+    color: white;
+}
+
+.headOur span {
+    color: var(--main--color);
+}
+
+/* services boxes */
+#ContainerBox{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    gap: 2rem;
+}
+#ContainerBox2{
+    margin-top:25px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    gap: 2rem;
+}
+.serviceBox{
+    border:none;
+    padding:1rem;
+    color: white;
+    border-radius:5vh;
+    background-color: #1c1a1a;
+}
+.serviceBox button{
+    border: none;
+    background-color: var(--main--color);
+    width:55%;
+    border-radius:10vh;
+}
+.serviceBox button:hover{
+    transition: all 0.4s;
+    box-shadow: 0 0 0.3em var(--main--color);
+}
+.serviceBox2{
+    border:none;
+    padding:1rem;
+    color: white;
+    border-radius:5vh;
+    background-color: #1c1a1a;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/23/10/48/code-2434271_640.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.serviceBox2 button{
+    border: none;
+    background-color: var(--main--color);
+    width:55%;
+    border-radius:10vh;
+}
+.serviceBox2 button:hover{
+    transition: all 0.4s;
+    box-shadow: 0 0 0.3em var(--main--color);
+}
+.iconService{
+    color: var(--main--color);
+    font-size:50px;
+    text-align: center;
+    border:none;
+}
+
+/* contactform */
+.headOur2 {
+    margin-top: 10vw !important;
+    color: white;
+}
+
+.headOur2 span {
+    color: var(--main--color);
+}
+form input{
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    padding:5px;
+    border-radius:0.5vh;
+}
+form textarea{
+    background-color: #3b3b3b;
+    border: none;
+    padding:5px;
+    border-radius:0.5vh;
+    resize:none;
+}
+.Sendbtn {
+    background-color: var(--main--color);
+    width:18%;
+    color: rgb(65, 57, 57);
+    font-weight: 600;
+    border-radius: 10vh;
+    border: none;
+}
+
+.Sendbtn:hover {
+    transition: all 0.4s;
+    box-shadow: 0 0 0.3em var(--main--color);
+    cursor: pointer;
+}
+
+/* copyWrite Section */
+.foot{
+    color: rgba(255, 255, 255, 0.553);
+    width:100%;
+    border:none;
+    padding:12px;
+    padding-left:30px;
+    background-color: #3b3b3b;
+}
+/* ligt dark mode */
+.mode{
+    color: white;
+
+}
+.mode:hover{
+    cursor: pointer;
+}
+/* Menubtn */
+#menubtn{
+    color:white;
+    font-size:2rem;
+    display: none;
+}
+
+/* mobile responshive */
+
+@media(max-width:600px){
+    *{
+        overflow-wrap: normal;
+        zoom:98%;
+        font-size: small;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .container{
+        overflow-x: hidden;
+        margin-left:10px !important;
+        max-width:900px !important;
+    }
+    .links{
+        display: none;
+    }
+    #nav{
+        background-color: rgb(15, 14, 14);
+        position:sticky;
+        top:0px;
+    }
+    .links2 {
+        display:flex;
+        flex-direction:column;
+        position: absolute;
+        top:3rem;
+        background-color:rgb(100, 98, 98);
+        width:97%;
+    }
+    .links2 a{
+        transition: all 0.5s;
+        text-decoration: none;
+        color: white;
+        padding:10px !important;
+        font-size:3vh;
+        padding-top:2vh !important;
+    }
+    .links2 a:hover{
+        background-color: var(--main--color);
+        color: black;
+    }
+    #menubtn{
+        margin-right:2vh !important;
+        display: inline;
+        margin-top:16px;
+        font-size:xx-large;
+    }
+    .home{
+        margin-top:10vh !important;
+        display: inline-table;
+    }
+    .links span{
+        display: none;
+    }
+    .mode{
+        display: none;
+    }
+    .icon i{
+        padding:1vh !important;
+        margin-left:10vh;
+    }
+    #meimg{
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        animation:none;
+        border-radius: 8%;
+        width:60vw;
+    }
+
+    /* About section */
+
+    .about-sec{
+        display: flex;
+        flex-direction: column-reverse;
+        /* width:100vw; */
+    }
+    .about{
+        display:inline-table;
+    }
+    .about p{
+        display:inline-block;
+        width:200%;
+    }
+    #image img{
+        align-self: center !important;
+    }
+
+    #ContainerBox{
+        display:inline-table;
+    }
+    .serviceBox{
+    }
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contain .game{
+    display:flex;
+    justify-content: center;
+    padding-top:50px;
+}
+.head{
+    background-color:rgb(0, 0, 70);
+    text-align: center;
+    color: white;
+    padding:20px;
+    font-size:x-large;
+    text-indent: 10px;
+}
+.box{
+    transition:2s ;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    text-align:center;
+    margin:20px;
+}
+.box:hover{
+    cursor: pointer;
+}
+.box img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+
+.msg-box{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width:200px;
+    border-radius:5px;
+    padding:10px;
+}
+
+.msg{
+    background-color:navy;
+    color: white;
+    text-align: center;
+    width:200px;
+    border-radius:5px;
+    padding:10px;
+}
+
+.computer{
+    background-color: red ;
+    color: white;
+    text-align: center;
+    width:200px;
+    border-radius:5px;
+    padding:10px;
+}
+.user{
+    background-color: green;
+    color: white;
+    text-align: center;
+    width:200px;
+    border-radius:5px;
+    padding:10px;
+}
+.rmv{
+    margin-left:10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width:100px;
+    border-radius:5px;
+    padding:10px;
+}
+.rmv:hover{
+    cursor: pointer;
+}
+
+.notice-board{
+    /* border:2px solid black; */
+    font-size:larger;
+    text-align: center;
+    padding:5px;
+    display:list-item;
+    /* width:150px; */
+    height: max-content;
+}
+.draw{
+    background-color:yellow;
+    color:red;
+    text-align: center;
+    width:200px;
+    border-radius:5px;
+    padding:10px;
+}
+
+/* theme */
+
+.head button{
+   position:absolute;
+   right:10px;
+   top:23px;
+   padding:3px;
+   border-radius:4px;
+   border: none;
+}
+
+@media  (max-width:426px){
+    .head button{
+        position:absolute;
+        top:55px;
+        right:25%;
+        left: 25%;
+    }
+    .head{
+        padding:25px;
+    }
+}
+
+.instruction{
+    padding:5px;
+    margin-top:10px;
+    position: relative;
+    left:42%;
+}
