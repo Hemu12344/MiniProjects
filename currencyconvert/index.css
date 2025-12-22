@@ -42,12 +42,16 @@ select{
 } */
 .allbox{
     display: flex;
+
 }
 .icon i{
     font-size:25px;
     position: relative;
     top:15px;
     margin-right:1px;
+}
+.icon i:hover{
+    cursor:pointer;
 }
 .btnn{
     background-color: rgb(42, 42, 146);
@@ -57,3 +61,4 @@ select{
     border-radius:5px;
     border: none;
 }
+
